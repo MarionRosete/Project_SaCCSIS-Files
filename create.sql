@@ -5,7 +5,7 @@
 # Project name:                                                          #
 # Author:                                                                #
 # Script type:           Database creation script                        #
-# Created on:            2020-03-09 15:13                                #
+# Created on:            2020-03-11 16:52                                #
 # ---------------------------------------------------------------------- #
 
 
@@ -104,12 +104,11 @@ CREATE TABLE `tbl_student` (
     `age` INTEGER(3) NOT NULL,
     `gender` VARCHAR(40) NOT NULL,
     `birthplace` VARCHAR(40) NOT NULL,
-    `provicialAddress` VARCHAR(40) NOT NULL,
     `street` VARCHAR(40) NOT NULL,
     `city` VARCHAR(40) NOT NULL,
     `province` VARCHAR(40) NOT NULL,
     `guardian` VARCHAR(40) NOT NULL,
-    `extraCurricular` VARCHAR(40),
+    `contactNum` VARCHAR(40) NOT NULL,
     CONSTRAINT `PK_tbl_student` PRIMARY KEY (`studentID`)
 );
 
